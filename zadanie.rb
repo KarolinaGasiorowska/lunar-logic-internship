@@ -32,10 +32,7 @@ number3 = number3.to_i
 
 numbers_from_user = [number1, number2, number3]
 
-
-
 puts "You have provided following numbers #{numbers_from_user}"
-
 
 def zamien_liczbe_na_tablice_stringow(a)
   #puts "Liczba #{a} zamieniona na tablice stringow:"
@@ -217,7 +214,7 @@ def znajdz_max_i_dodaj_3_do_pierwszej_cyfry (x,wynik,wynik1,wynik2,wynik3)
         x = wynik3_z_x[0].to_i
       end
   end
-  return wynik = [wynik1, wynik2, wynik3]
+  return wynik = [wynik1, wynik2, wynik3] 
 end
 
 # x = available changes
@@ -252,23 +249,7 @@ if ilosc_liczb_z_reszta_rowna_0 == 1
   x = wynik3_z_x[0].to_i
   wynik = [wynik1, wynik2, wynik3]
   #puts "The result #{wynik}"
-  if x >=3
-    max_z_wyniku = najwieksza_liczba(wynik)
-      if max_z_wyniku == wynik1
-        wynik1_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik1, wynik)
-        wynik1 = wynik1_z_x[1].to_i
-        x = wynik1_z_x[0].to_i
-      elsif max_z_wyniku == wynik2 
-        wynik2_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik2, wynik)
-        wynik2 = wynik2_z_x[1].to_i
-        x = wynik2_z_x[0].to_i
-      elsif max_z_wyniku == wynik3
-        wynik3_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik3, wynik)
-        wynik3 = wynik3_z_x[1].to_i
-        x = wynik3_z_x[0].to_i
-      end
-  end
-  wynik = [wynik1, wynik2, wynik3]
+  wynik = znajdz_max_i_dodaj_3_do_pierwszej_cyfry(x,wynik,wynik1,wynik2,wynik3)
   puts "The result #{wynik}"
 end
 
@@ -286,43 +267,10 @@ if ilosc_liczb_z_reszta_rowna_0 == 2
   x = wynik3_z_x[0].to_i
   wynik = [wynik1, wynik2, wynik3]
   #puts "The result #{wynik}"
-  if x >=3
-    max_z_wyniku = najwieksza_liczba(wynik)
-      if max_z_wyniku == wynik1
-        wynik1_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik1, wynik)
-        wynik1 = wynik1_z_x[1].to_i
-        x = wynik1_z_x[0].to_i
-      elsif max_z_wyniku == wynik2 
-        wynik2_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik2, wynik)
-        wynik2 = wynik2_z_x[1].to_i
-        x = wynik2_z_x[0].to_i
-      elsif max_z_wyniku == wynik3
-        wynik3_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik3, wynik)
-        wynik3 = wynik3_z_x[1].to_i
-        x = wynik3_z_x[0].to_i
-      end
-  end
-  wynik = [wynik1, wynik2, wynik3]
-  #puts "The result #{wynik}"
-  if x >=3
-    max_z_wyniku = najwieksza_liczba(wynik)
-      if max_z_wyniku == wynik1
-        wynik1_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik1, wynik)
-        wynik1 = wynik1_z_x[1].to_i
-        x = wynik1_z_x[0].to_i
-      elsif max_z_wyniku == wynik2 
-        wynik2_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik2, wynik)
-        wynik2 = wynik2_z_x[1].to_i
-        x = wynik2_z_x[0].to_i
-      elsif max_z_wyniku == wynik3
-        wynik3_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik3, wynik)
-        wynik3 = wynik3_z_x[1].to_i
-        x = wynik3_z_x[0].to_i
-      end
-  end
-  wynik = [wynik1, wynik2, wynik3]
+  wynik = znajdz_max_i_dodaj_3_do_pierwszej_cyfry(x,wynik,wynik1,wynik2,wynik3)
   puts "The result #{wynik}"
 end
+
 
 if ilosc_liczb_z_reszta_rowna_0 == 3
   #puts "trzy liczby sa podzielna przez 3"
@@ -336,42 +284,10 @@ if ilosc_liczb_z_reszta_rowna_0 == 3
   wynik3 = wynik3_z_x[1].to_i
   x = wynik3_z_x[0].to_i
   wynik = [wynik1, wynik2, wynik3]
-  wynik[0].class
   #puts "The result #{wynik}"
-  if x >=3
-    max_z_wyniku = najwieksza_liczba(wynik)
-      if max_z_wyniku == wynik1
-        wynik1_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik1, wynik)
-        wynik1 = wynik1_z_x[1].to_i
-        x = wynik1_z_x[0].to_i
-      elsif max_z_wyniku == wynik2 
-        wynik2_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik2, wynik)
-        wynik2 = wynik2_z_x[1].to_i
-        x = wynik2_z_x[0].to_i
-      elsif max_z_wyniku == wynik3
-        wynik3_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik3, wynik)
-        wynik3 = wynik3_z_x[1].to_i
-        x = wynik3_z_x[0].to_i
-      end
-  end
-  wynik = [wynik1, wynik2, wynik3]
+  wynik = znajdz_max_i_dodaj_3_do_pierwszej_cyfry(x,wynik,wynik[0],wynik[1],wynik[2])
   #puts "The result #{wynik}"
-  if x >=3
-    max_z_wyniku = najwieksza_liczba(wynik)
-      if max_z_wyniku == wynik1
-        wynik1_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik1, wynik)
-        wynik1 = wynik1_z_x[1].to_i
-        x = wynik1_z_x[0].to_i
-      elsif max_z_wyniku == wynik2 
-        wynik2_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik2, wynik)
-        wynik2 = wynik2_z_x[1].to_i
-        x = wynik2_z_x[0].to_i
-      elsif max_z_wyniku == wynik3
-        wynik3_z_x = dodaj_trzy_do_pierwszej_cyfry(x, wynik3, wynik)
-        wynik3 = wynik3_z_x[1].to_i
-        x = wynik3_z_x[0].to_i
-      end
-  end
-  wynik = [wynik1, wynik2, wynik3]
+  x = x - 3
+  wynik = znajdz_max_i_dodaj_3_do_pierwszej_cyfry(x,wynik,wynik[0],wynik[1],wynik[2])
   puts "The result #{wynik}"
 end
